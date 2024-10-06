@@ -1,0 +1,76 @@
+<html><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Аня!!! С Днем рождения!!!</title>
+<style>
+  body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #f5e3e6, #d9e4f5);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  .container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 600px;
+    text-align: center;
+  }
+  h1 {
+    color: #ff69b4;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  .photo-frame {
+    width: 300px;
+    height: 300px;
+    border: 10px solid #fff;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  .photo-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .message {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  .heart {
+    color: #ff69b4;
+    font-size: 2em;
+    animation: pulse 1.5s infinite;
+  }
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>С др!</h1>
+    <p class="message" id="greeting-text">
+      Ну штош... вот тебе и стало 22 года.... жестьб бабушка. Я не перестаю удивляться тому, насколько ты умная и хорошая и остаешься такой несмотря на все трудности. Я тебя искренне люблю и уважаю как самого близкого человека для меня. Оставайся всегда такой же хорошей и доброй, и милой, и красивой, и, наверное, самое главное, счастливой несмотря не на что. Как говорил еще один именинник сегодня, это был тяжелый год... но все равно он был полон многими действительно замечательными моментами, и я очень рад, что я провел этот год именно с тобой, планирую сделать это и в следующем году;)
+    </p>
+    <div class="heart">❤</div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const greetingText = document.getElementById('greeting-text');
+      const defaultText = greetingText.innerText;
+    });
+  </script>
+</body></html>
